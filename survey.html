@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire Form</title>
+    <link rel="stylesheet" href="/styles_folder/survey_styles.css">
+    <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,40..300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/index.html" id="navbar__logo"><i class="fas fa-gem"></i> Survey </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__btn">
+                    <a href="/index.html" class="button"> Home </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Questionnaire</h1>
+                <form id="questionnaire-form">
+                </header>
+                <form id="survey-form">
+                  <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      class="form-control"
+                      placeholder="Enter your name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="Enter your Email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label id="number-label" for="number"
+                      >Age<span class="clue">(optional)</span></label
+                    >
+                    <input
+                      type="number"
+                      name="age"
+                      id="number"
+                      min="10"
+                      max="99"
+                      class="form-control"
+                      placeholder="Age"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <p>Which option best describes your current role?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                      <option disabled selected value>Select current role</option>
+                      <option value="student">Student</option>
+                      <option value="job">Full Time Job</option>
+                      <option value="learner">Full Time Learner</option>
+                      <option value="preferNo">Prefer not to say</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+              
+                  <div class="form-group">
+                    <p>Would you recommend freeCodeCamp to a friend?</p>
+                    <label>
+                      <input
+                        name="user-recommend"
+                        value="definitely"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                      />Definitely</label
+                    >
+                    <label>
+                      <input
+                        name="user-recommend"
+                        value="maybe"
+                        type="radio"
+                        class="input-radio"
+                      />Maybe</label
+                    >
+              
+                    <label
+                      ><input
+                        name="user-recommend"
+                        value="not-sure"
+                        type="radio"
+                        class="input-radio"
+                      />Not sure</label
+                    >
+                  </div>
+              
+                  <div class="form-group">
+                    <p>
+                      What is your favorite feature of freeCodeCamp?
+                    </p>
+                    <select id="most-like" name="mostLike" class="form-control" required>
+                      <option disabled selected value>Select an option</option>
+                      <option value="challenges">Challenges</option>
+                      <option value="projects">Projects</option>
+                      <option value="community">Community</option>
+                      <option value="openSource">Open Source</option>
+                    </select>
+                  </div>
+              
+                  <div class="form-group">
+                    <p>
+                      What would you like to see improved?
+                      <span class="clue">(Check all that apply)</span>
+                    </p>
+              
+                    <label
+                      ><input
+                        name="prefer"
+                        value="front-end-projects"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Front-end Projects</label
+                    >
+                    <label>
+                      <input
+                        name="prefer"
+                        value="back-end-projects"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Back-end Projects</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="data-visualization"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Data Visualization</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="challenges"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Challenges</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="open-source-community"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Open Source Community</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="gitter-help-rooms"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Gitter help rooms</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="videos"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Videos</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="city-meetups"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />City Meetups</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="wiki"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Wiki</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="forum"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Forum</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="additional-courses"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Additional Courses</label
+                    >
+                  </div>
+              
+                  <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea
+                      id="comments"
+                      class="input-textarea"
+                      name="comment"
+                      placeholder="Enter your comment here..."
+                    ></textarea>
+                  </div>
+              
+                  <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                      Submit
+                    </button>
+                  </div>
+            <div class="main__img--container">
+                <!-- <img src="images/undraw_reviews_lp8w.svg" alt="picture" id="main__img"> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            </div>
+            <div class="social__media">
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo"><i class="fas fa-gem"></i>NEXT</a>
+                    </div>
+                    <p class="website__rights">© NEXT 2024. All rights reserved.</p>
+                    <div class="social__icons">
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
