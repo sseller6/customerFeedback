@@ -430,6 +430,7 @@ body {
   line-height: 1.4;
   color: var(--color-white);
   margin: 0;
+  background: #141414;
 }
 
 /* mobile friendly alternative to using background-attachment: fixed */
