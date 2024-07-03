@@ -433,6 +433,12 @@
     cursor: pointer;
 }
 
+.services_card:hover {
+    /* Added 6/27/2024 */
+    background: #4837ff;
+    transition: all 0.3s ease;
+}
+
 .services__card:hover {
     transform: scale(1.075);
     transition: 0.2s ease-in;
