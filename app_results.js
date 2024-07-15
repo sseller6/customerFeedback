@@ -22,26 +22,36 @@ const role = urlParams.get('role')
 console.log(role);
 // The role of the user.
 
-const userExperience = urlParams.get('userExperience')
+const userExperience = parseInt(urlParams.get('userExperience'))
 console.log(userExperience);
 // The userExperience of the user.
 
-const value = urlParams.get('value')
+const value = parseInt(urlParams.get('value'))
 console.log(value);
 // Value rating.
 
-const expectations = urlParams.get('expectations')
+const expectations = parseInt(urlParams.get('expectations'))
 console.log(expectations);
 // Expectations rating.
 
-const easeOfUse = urlParams.get('easeOfUse')
+const easeOfUse = parseInt(urlParams.get('easeOfUse'))
 console.log(easeOfUse);
 // EaseOfUse rating.
 
-const recommend = urlParams.get('recommend')
+const recommend = parseInt(urlParams.get('recommend'))
 console.log(recommend);
 // Recommend rating.
 
 const comments = urlParams.get('comments')
 console.log(comments);
 // comments rating.
+
+average = (userExperience + value + expectations + easeOfUse + recommend) / 5;
+
+console.log(average)
+
+if (average == 5)
+{
+    let prompt = document.querySelector("#prompt")
+    prompt.innerHTML = "GO TO GOOGLE NOW"
+}
